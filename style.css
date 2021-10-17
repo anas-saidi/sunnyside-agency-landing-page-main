@@ -1,0 +1,334 @@
+:root{
+    --primary-soft-red:hsl(7, 99%, 70%);
+    --primary-yellow:hsl(51, 100%, 49%);
+    --primary-dark-cyan:hsl(167, 40%, 24%);
+    --primary-dark-blue:hsl(198, 62%, 26%);
+    --primary-cyan:hsl(168, 34%, 41%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+h1,h2,h3{
+    font-family: 'Fraunces', serif;
+}
+p,a{
+  
+    font-family: 'Barlow', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+/* --Header-- */
+.flex {
+    display: flex;
+}
+
+.nav_item {
+margin-right: 2em;
+
+}
+.nav_link {
+font-weight: 600;
+font-size: .9em;
+color: hsl(0, 0%, 100%);
+}
+.nav_link--btn {
+    background:hsl(0, 0%, 100%);
+    padding: .9rem 1rem;
+    color: hsl(212, 27%, 19%);
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-family: 'Fraunces', serif;
+}
+.logo {
+    padding: 1em;
+}
+.flex--container {
+    justify-content: space-between;
+}
+.header {
+color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+}
+.intro {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    width: 100%;
+    margin-top: 80px;
+}
+/* --first section-- */
+.first--section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(3,600px);
+}
+.intro-title {
+    font-size: 5rem;
+}
+.grid {
+    display: grid;
+}
+.img--card {
+background-position:center center;
+background-size: cover;
+}
+.transform__card {
+    grid-area: 1/1/span 1/span 1;
+}
+.stand__img{
+    grid-area: 2/1/span 1 / span 1;
+    background-image: url(images/desktop/image-stand-out.jpg);
+}
+.transform__img{
+grid-column:2 / span 1;
+background-image: url(images/desktop/image-transform.jpg);
+}
+.text--card {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7rem 5rem;
+}
+.overlay--card{
+position: relative;
+text-align: center;
+background-position: top;
+background-size: cover;
+}
+.img__info{
+height: 150px;
+ margin-bottom: 50px;
+ position: absolute;
+ bottom: 0;
+}
+.overlay__text{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+.card__title {
+    font-weight: 900;
+    color:hsl(212, 27%, 19%);
+    font-size: 2rem;
+}
+.design__card{
+    
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    color: var(--primary-dark-cyan);
+    
+}
+.photography__card{
+    background-image: url(images/desktop//image-photography.jpg);
+    color: var(--primary-dark-blue);
+}
+.learn--more{
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    color:var(--primary-dark-blue);
+    font-size: .8rem;
+}
+.card__text{
+   color: hsl(210, 4%, 67%);
+   font-weight: 600;
+   line-height: 1.5;
+   font-size: .9rem;
+}
+/* --Testimonials-- */
+.testimonials{
+    text-align: center;
+    padding: 50px;
+
+}
+.section__title{
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    padding: 2.5rem;
+}
+.client__job{
+    color: hsl(210, 4%, 67%);
+}
+.client__name {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.testimo__text{
+    color: hsl(232, 10%, 55%);
+    line-height: 1.5;
+    margin: 70px 1.5em;
+}
+img {
+height: auto;
+max-width: 100%;
+}
+.avatar--image{
+    height: 70px;
+    border-radius: 50%;
+}
+.learn--more{
+    position: relative;
+    padding: 0 .5em;
+  
+}
+.learn--more::after{
+position: absolute;
+text-align: center;
+right:0;
+top: .8em;
+z-index: -1;
+content: "";
+width: 100%;
+display: inline-block;
+height: .6em;
+border-radius: 2rem;
+}
+.yellow--border::after{
+    background: hsl(51, 100%, 49%);
+}
+.red--border::after{
+background: hsl(7, 99%, 70%);
+}
+/* --Images gallery-- */
+.img__slider{
+margin-top: 150px;
+grid-template-columns: repeat(4,1fr);
+}
+/* --Footer-- */
+footer{
+    background-color: hsl(166.9, 43.2%, 71%);
+    text-align: center;
+    padding: 2.5rem;
+}
+.nav--list,.social__media{
+    justify-content: space-around;
+    padding: 1.5rem;
+
+}
+.nav--list{
+    width: 30%;
+    margin: 0 auto;
+}
+.footer-nav__link {
+color: var(--primary-cyan);
+font-weight: 600;
+margin-left: 1em;
+}
+.social__media{
+    margin: 50px auto;
+    width: 25%;
+}
+.fo--nav_item {
+color: var(--primary-cyan);
+font-size: .9em;
+}
+.social_icon{
+margin-left: 1rem;
+}
+.humburger--btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+/* Active states */
+.footer-nav__link:hover{
+    color: hsl(0, 0%, 100%);
+}
+.nav_link--btn:hover{
+background-color: rgb(115, 206, 252);
+color: white;
+
+}
+/* We add important here to override the inline styling on svg  */
+a svg path:hover{
+    fill: white !important;
+}
+/* --Mobile Design-- */
+@media (max-width:750px){
+.navbar{
+display: none;
+width: 100%;
+text-align: center;
+}
+.nav-list{
+    flex-direction: column;
+}
+.nav_item{
+    margin: 1rem;
+}
+.flex--container{
+    flex-wrap: wrap;
+}
+.navbar.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .first--section {
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,500px auto) repeat(2,minmax(500px,auto));
+    }
+    .transform__card {
+    grid-column:1/ span 1;
+    grid-row: 2/ span 1;
+    }
+
+    .stand__img{
+        grid-area: 3/1/span 1 / span 1;
+        background-image: url(images/mobile/image-stand-out.jpg);
+    }
+    .transform__img{
+    grid-column:1 / span 1;
+    grid-row: 1/ span 1;
+    background-image: url(images/mobile/image-transform.jpg);
+    }
+
+    .text--card {
+        text-align: center;
+        width: 80%;
+        padding: 2rem 2rem;
+    }
+    .overlay__text{
+        width: 80%;
+    }
+    .testimo--flex{
+        flex-direction: column;
+    }
+    .img__slider{
+        margin-top: 0;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .nav--list{
+        width: 80%;
+    }
+    
+.social__media{
+    width: 100%;
+}
+.intro-title{
+    font-size: 2.5rem;
+}
+.humburger--btn{
+    display: block;
+   
+  
+}
+header{
+    background-image: url(images/mobile/image-header.jpg);
+}
+
+}
