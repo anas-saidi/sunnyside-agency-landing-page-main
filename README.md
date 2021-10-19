@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://bit.ly/3vpohE7)
+- Live Site URL: [Live Preview](https://bit.ly/3vpohE7)
 
 ## My process
 
