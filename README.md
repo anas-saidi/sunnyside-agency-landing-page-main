@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-I used this project to practice laying out elements on the page using Flexbox & Grid Css . I also wrote my first two lines in javascript to make the humburger menu . The page had multiple sections which was a good opportunity to refresh on semantic html tags . I also learnt a lot about responsive design and media queries .
+I used this project to practice Flexbox & Grid layout . I also wrote my first two lines in Javascript to make the humburger menu . The page had multiple sections which was a good opportunity to refresh on semantic HTML tags . I also learnt a lot about responsive design and media queries .
 
 ### Continued development
 
